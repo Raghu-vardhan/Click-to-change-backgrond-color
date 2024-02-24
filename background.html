@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BackgroundColor.in </title>
+        <link rel="stylesheet" href="background.css">
+        
+    </head>
+    <body >
+        <div class="main">
+            <div id="first">
+                <h1>BackgroundColor:<span id="color">#fff</span></h1> 
+            </div>
+            <br>
+            <div>
+                <button id="btn" onclick="Newcolor()">Click Me</button>
+                
+            </div>
+        </div>
+        
+        <script>
+            const btn= document.getElementById("btn")
+            const pr=document.getElementsByClassName("color")
+            function Newcolor(){
+               let a = setInterval(function(){
+                const colors=["#F15025","Green","Orange","Yellow","Blue","Olive",
+                "Magenta","Lime","Red","Cyan","#fff"]
+                    
+                const randomnumber= [Math.floor(Math.random() * 
+                colors.length) ] ;
+                console.log(randomnumber)
+                document.body.style.backgroundColor =colors[randomnumber];
+                btn.style.backgroundColor=colors[randomnumber]
+                color.textContent= colors[randomnumber] 
+                color.style.color= colors[randomnumber]
+                
+                   if(randomnumber == 10 ){              
+                     clearInterval(a)
+                   }
+                },500)
+            };
+        </script>
+    </body>
+</html>

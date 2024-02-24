@@ -1,0 +1,37 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+.main{
+    gap: 100px;
+    position: fixed;
+    margin-left: 50vh;
+    margin-top: 30vh;
+ }
+#first{
+    background-color: black;
+    color: white;
+    height:7vh;
+    width: 75vh;
+    align-items: center;
+    padding: 10px;
+    padding-left: 20ch;
+    border-radius: 10px; 
+}
+#btn{
+    position: relative;
+    left: 40vh;
+    height: 40px;
+    width:18vh;
+    font-size: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 7px;
+    border: solid black;
+    transition: all 0.5s ease;
+    box-shadow: 7px black;
+}
+
+
